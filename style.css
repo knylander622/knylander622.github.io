@@ -1,16 +1,30 @@
 body{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: x-large;
     margin: 0;
     padding: 0;
     line-height: 1.3;
-    background-color: #00a04b;
+    background-color: #00a04b; */
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  color: #ffffff;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
     min-height: 750x;
     flex: 1;
 }
+#starCanvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Behind everything */
+  width: 100%;
+  height: 100%;
+}
+
 header{
-    background-color: #006E33;
-    color: rgb(255, 255, 255);
+    background: transparent;
+    color: #ffffff;
     font-size: 5rem;
     padding: .5rem;
     display:grid;
@@ -49,7 +63,7 @@ main{
 }
 
 footer {
-    background-color: #EFCA;
+    background: transparent;
     padding: 1rem;
     position: fixed;
     bottom: 0;
